@@ -1,0 +1,47 @@
+Xây dựng chương trình Quản lý hàng hóa trong kho của 1 siêu thị. Hàng hóa có các thông tin sau các
+	- Loại: thực phẩm, sành sứ, điện máy. 
+	- Mã hàng (không được sửa, không được để trống)
+		+ giúp phân biệt giữa các hàng hóa với nhau
+	- Tên hàng hóa
+	- Giá nhập
+	- Số lượng tồn kho
+	- Ngày nhập kho
+Các chức năng của chương trình:
+	- Menu: để người dùng lựa chọn chức năng
+	- Thêm, xóa, sửa Hàng hóa 
+		* nâng cao: theo mã của 1 hàng hóa bất kỳ
+		
+	- tìm kiếm theo
+		+ loại
+		+ giá
+			* nâng cao: tìm theo khoảng giá từ ... đến ....
+		+ ngày nhập
+			* nâng cao: tìm theo khoảng từ ngày đến ngày
+		
+	- sắp xếp theo (tăng dần, giảm dần)
+		+ giá nhập
+		+ ngày nhập
+			* nâng cao: 
+				** theo loại và theo ngày nhập
+				** theo loại và theo giá
+	- thống kê: 
+		+ tổng số lượng hàng hóa
+		+ tổng giá trị nhập kho
+		+ số lượng từng loại hàng
+
+Hướng dẫn:
+	- Viết báo cáo Tiểu luận theo mẫu
+		+ Sinh viên tham khảo để viết báo cáo
+	- Tiểu luận phải có 
+		+ Mục lục (không biết, tham khảo google0
+		+ nội dung của Navigation Pane (TRong MS Word, vào View, chọn Navigation Pane), dễ cho việc di chuyển giữa các nội dung trong Tiểu luận (Không có sẽ bị trừ điểm)
+	- Sinh viên xây dựng các kiểu dữ liệu tham chiếu đối tượng (các class) cần thiết cho chương trình
+	- Sử dụng các cấu trúc dữ liệu và các giải thuật cần thiết cho chương trình
+	 	**Sử dụng Cấu trúc ArrayList (tối đa 7 điểm)
+	- Khuyến khích sử dụng giải thuật tìm kiếm nhị phân
+	- Tùy chọn giải thuật phù hợp cho chương trình của từng SV
+	- Mỗi sinh viên nộp mã nguồn chương trình  + File báo cáo (ms word) 1 bằng link  git (đăng ký vào link git vào danh sách do GV cung cấp)
+	- Chương trình khi chạy phải có sẵn dữ liệu (ít nhất 20 dữ liệu về hàng hóa)
+		+ không cần nhập để có dữ liệu minh họa
+
+	
