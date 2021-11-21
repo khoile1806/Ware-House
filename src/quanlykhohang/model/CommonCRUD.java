@@ -59,4 +59,12 @@ public class CommonCRUD {
             return "Update successfully!";
         }
     }
+
+    public static void totalProduct(Map<String,Product> mapProduct){
+        int total = 0;
+        for(Product product: mapProduct.values()){
+            total += product.getQuantity();
+        }
+        System.out.println("Total product: "+total);
+    }
 }

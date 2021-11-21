@@ -119,7 +119,7 @@ public class Menu {
                     return;
                 case 6:
                     System.out.println(mapProduct);
-
+                    break;
                 case 7:
                     System.out.println("Exit");
                     return;

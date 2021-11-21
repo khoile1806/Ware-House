@@ -78,19 +78,19 @@ public class Product implements Comparable<Product>{
     @Override
     public String toString() {
         System.out.println("");
-        System.out.println("------------------------");
-        System.out.println("=> id = " +id);
-        System.out.println("=> type = " +type);
-        System.out.println("=> name = " +name);
-        System.out.println("=> quantity = " +quantity);
-        System.out.println("=> inventory = " +inventory);
-        System.out.println("=> price = " +price);
-        System.out.println("=> inputDay = " +inputDay);
-        System.out.println("------------------------");
+        System.out.println("---------------------------------");
+        System.out.println("==> id = " + id + " <==");
+        System.out.println("==> type = " + type +" <==");
+        System.out.println("==> name = " + name +" <==");
+        System.out.println("==> quantity = " + quantity +" <==");
+        System.out.println("==> inventory = " + inventory +" <==");
+        System.out.println("==> price = " + price + " USD/product" +" <==");
+        System.out.println("==> inputDay = " + inputDay +" <==");
+        System.out.println("==> Depot = " + (price*(inventory+quantity)) + "USD" + " <==");
+        System.out.println("---------------------------------");
         System.out.println("");
         return "";
     }
-
 
     // Nó sẽ so sánh để trả về 1 giá trị kiểu số dương
     @Override
