@@ -10,7 +10,7 @@ public class ConvertTime {
         //Parsing the given String to Date object
         Date date = formatter.parse(time);
 
-        System.out.println("Date object value: "+date);
+        System.out.println("Date object value: "+ date);
         return date;
     }
 }

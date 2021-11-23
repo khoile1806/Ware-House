@@ -10,11 +10,11 @@ public class Product implements Comparable<Product>{
     private double price;
     private Date inputDay;
 
-    public Product() {
-    }
+    public Product() {}
 
     public Product(String type, String name, int quantity, double price, Date inputDay, int inventory) {
-        this.id = type+"_"+System.currentTimeMillis();
+        // id sử dụng thời gian nhập vào dưới dạng long
+        this.id = type +"_"+ System.currentTimeMillis();
         this.type = type;
         this.name = name;
         this.inventory = inventory; 
