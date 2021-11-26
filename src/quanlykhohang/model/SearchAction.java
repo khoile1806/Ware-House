@@ -16,7 +16,7 @@ public class SearchAction {
             }
         }
         if(count==0) 
-            return "Nothing to find =[[[";
+            return "\nData does not exist";
         else 
             return "";
     }
@@ -30,7 +30,7 @@ public class SearchAction {
             }
         }
         if (count == 0){
-            System.out.println("\nNothing to find =[[[");
+            System.out.println("\nData does not exist");
         }
     }
 
@@ -43,7 +43,7 @@ public class SearchAction {
             }
         }
         if(count==0) 
-            System.out.println("\nNothing to find =[[[");
+            System.out.println("\nData does not exist");
     }
    
     public void searchInPriceRange(double from, double to, Map<String,Product> mapProduct){
@@ -55,6 +55,6 @@ public class SearchAction {
             }
         }
         if(count==0) 
-            System.out.println("\nNothing to find =[[[");
+            System.out.println("\nData does not exist");
     }
 }
