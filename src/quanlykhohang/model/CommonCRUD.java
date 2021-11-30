@@ -1,12 +1,14 @@
 package quanlykhohang.model;
 import quanlykhohang.model.entities.Product;
 import quanlykhohang.utils.ConvertTime;
+import quanlykhohang.utils.dataToFiles;
 
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.*;
 
 public class CommonCRUD {
-    public void addProduct(String type, Map<String,Product> mapProduct) throws ParseException, InterruptedException {
+    public void addProduct(String type, Map<String,Product> mapProduct) throws ParseException, InterruptedException, IOException {
         // Scanner sc = new Scanner(System.in);
 
         // System.out.println("Input name:");
@@ -122,11 +124,13 @@ public class CommonCRUD {
         Product E10 = new Product("EL", "Lap top", 26000, 10, convert.stringToDate("15-10-2016"),300);
         mapProduct.put(E10.getId(), E10);
         Thread.sleep(200);
-
+        System.out.print(mapProduct);
+        dataToFiles.writeFile(mapProduct);
         System.out.println(mapProduct);
 }
 
-    public String deleteProduct(String id, Map<String,Product> mapProduct){
+    public String deleteProduct(String id, Map<String,Product> mapProduct) throws IOException{
+        dataToFiles.readFile();
         Product product = mapProduct.get(id);
         if(product== null) return "Not found product with id: " + id;
         else {
@@ -136,7 +140,8 @@ public class CommonCRUD {
         }
     }
 
-    public String updateProduct(String id, Map<String,Product> mapProduct){
+    public String updateProduct(String id, Map<String,Product> mapProduct) throws IOException{
+        dataToFiles.readFile();
         Scanner Scanner = new Scanner(System.in);
         Product product = mapProduct.get(id);
         if(product== null) return "Not found product with id: " + id;
@@ -147,7 +152,7 @@ public class CommonCRUD {
             System.out.println("Input price:");
             double price= Scanner.nextDouble();
             product.setPrice(price);
-            System.out.println("input iventory");
+            System.out.println("input inventory");
             int inventory = Scanner.nextInt();
             product.setInventory(inventory);
             System.out.println("Input quantity:");

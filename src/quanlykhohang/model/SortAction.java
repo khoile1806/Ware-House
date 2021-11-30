@@ -1,10 +1,14 @@
 package quanlykhohang.model;
 
 import quanlykhohang.model.entities.Product;
+import quanlykhohang.utils.dataToFiles;
+
+import java.io.IOException;
 import java.util.*;
 
 public class SortAction {
-    public void sortByPriceIncrease(Map<String, Product> mapProduct){
+    public void sortByPriceIncrease(Map<String, Product> mapProduct) throws IOException{
+        dataToFiles.readFile();
         Map<String, Double> map3 = new HashMap<>();
         for (Map.Entry<String, Product> entry : mapProduct.entrySet()){
             map3.put(entry.getKey(),entry.getValue().getPrice());
@@ -17,7 +21,8 @@ public class SortAction {
         // System.out.println(map3);
     }
 
-    public void sortByPriceDecrease(Map<String, Product> mapProduct){
+    public void sortByPriceDecrease(Map<String, Product> mapProduct) throws IOException{
+        dataToFiles.readFile();
         Map<String, Double> map3 = new HashMap<>();
         for (Map.Entry<String, Product> entry : mapProduct.entrySet()){
             map3.put(entry.getKey(),entry.getValue().getPrice());
@@ -44,7 +49,8 @@ public class SortAction {
     //     }
     // }
 
-    public void sortByTypeAndInputDay(Map<String, Product> mapProduct){
+    public void sortByTypeAndInputDay(Map<String, Product> mapProduct) throws IOException{
+        dataToFiles.readFile();
         Map<String, Product> map3 = new HashMap<>();
         for (Map.Entry<String, Product> entry : mapProduct.entrySet()){
             map3.put(entry.getKey(),entry.getValue());
@@ -56,7 +62,8 @@ public class SortAction {
         // System.out.println(map3);
     }
 
-    public void sortByTypeAndPrice(Map<String, Product> mapProduct){
+    public void sortByTypeAndPrice(Map<String, Product> mapProduct) throws IOException{
+        dataToFiles.readFile();
         Map<String, Product> map3 = new HashMap<>();
         for (Map.Entry<String, Product> entry : mapProduct.entrySet()){
             map3.put(entry.getKey(),entry.getValue());
@@ -68,7 +75,8 @@ public class SortAction {
         // System.out.println(map3);
     }
 
-    public void sortInputdayIncrease(Map<String, Product> mapProduct){
+    public void sortInputdayIncrease(Map<String, Product> mapProduct) throws IOException{
+        dataToFiles.readFile();
         Map<String, Date> map3 = new HashMap<>();
         for (Map.Entry<String, Product> entry : mapProduct.entrySet()){
             map3.put(entry.getKey(),entry.getValue().getInputDay());
@@ -80,7 +88,8 @@ public class SortAction {
         // System.out.println(map3);
     }
 
-    public void sortInputdayDecrease(Map<String, Product> mapProduct){
+    public void sortInputdayDecrease(Map<String, Product> mapProduct) throws IOException{
+        dataToFiles.readFile();
         Map<String, Date> map3 = new HashMap<>();
         for (Map.Entry<String, Product> entry : mapProduct.entrySet()){
             map3.put(entry.getKey(),entry.getValue().getInputDay());
@@ -92,7 +101,8 @@ public class SortAction {
         // System.out.println(map3);
     }
 
-    public void sortByIdDecrease(Map<String, Product> mapProduct){
+    public void sortByIdDecrease(Map<String, Product> mapProduct) throws IOException{
+        dataToFiles.readFile();
         Map<String, String> map3 = new HashMap<>();
         for (Map.Entry<String, Product> entry : mapProduct.entrySet()){
             map3.put(entry.getKey(),entry.getValue().getId());
@@ -104,7 +114,8 @@ public class SortAction {
         // System.out.println(map3);
     }
 
-    public void sortByIdIncrease(Map<String, Product> mapProduct){
+    public void sortByIdIncrease(Map<String, Product> mapProduct) throws IOException{
+        dataToFiles.readFile();
         Map<String, String> map3 = new HashMap<>();
         for (Map.Entry<String, Product> entry : mapProduct.entrySet()){
             map3.put(entry.getKey(),entry.getValue().getId());

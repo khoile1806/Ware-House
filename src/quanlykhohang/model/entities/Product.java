@@ -75,6 +75,19 @@ public class Product implements Comparable<Product>{
         this.inventory = inventory;
     }
 
+
+    public String toString2() {
+        return "Product{" +
+                "id='" + id + '\'' +
+                ", type='" + type + '\'' +
+                ", name='" + name + '\'' +
+                ", quantity=" + quantity +
+                ", inventory=" + inventory +
+                ", price=" + price +
+                ", inputDay=" + inputDay +
+                '}';
+    }
+
     @Override
     public String toString() {
         System.out.println("");

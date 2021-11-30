@@ -6,7 +6,9 @@ import quanlykhohang.model.Export;
 import quanlykhohang.model.SearchAction;
 import quanlykhohang.model.SortAction;
 import quanlykhohang.utils.ConvertTime;
+import quanlykhohang.utils.dataToFiles;
 
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.*;
 
@@ -20,7 +22,7 @@ public class Menu {
     Statistical statistical = new Statistical();
     Export export = new Export();
 
-    public void showMenu() throws ParseException, InterruptedException {
+    public void showMenu() throws ParseException, InterruptedException, IOException {
         while(true){
             System.out.println("\n------------------");
             System.out.println("        Menu        ");
@@ -191,6 +193,7 @@ public class Menu {
                     }
                     break;
                 case 6:
+                    dataToFiles.readFile();
                     System.out.println("");
                     statistical.total(mapProduct);
                     statistical.productsExpired(mapProduct);
@@ -219,7 +222,8 @@ public class Menu {
                     break;
                 case 8:
                     System.out.println("\nExit program");
-                    break;
+                    dataToFiles.saveFile(mapProduct);
+                    return;
                 default:
                     System.out.println("\nPlease enter again");
                     break;
