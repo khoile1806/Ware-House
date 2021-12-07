@@ -36,6 +36,13 @@ public class dataToFiles {
         }
     }
 
+    public static void deleteFile() throws IOException {
+        File file = new File("d:/ProductsValue.bin");
+        if (file.exists()) {
+            file.delete();
+        }
+    }
+
     public static void saveFile(Map<String, Product> products) throws IOException {
         FileOutputStream fos = null;
         try {

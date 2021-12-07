@@ -77,33 +77,33 @@ public class Product implements Comparable<Product>{
 
 
     public String toString2() {
-        return "Product{" +
-                "id='" + id + '\'' +
-                ", type='" + type + '\'' +
-                ", name='" + name + '\'' +
-                ", quantity=" + quantity +
-                ", inventory=" + inventory +
-                ", price=" + price +
-                ", inputDay=" + inputDay +
+        return "Product { " +
+                "id ='" + id + '\'' +
+                ", type ='" + type + '\'' +
+                ", name ='" + name + '\'' +
+                ", quantity =" + quantity +
+                ", inventory =" + inventory +
+                ", price =" + price +
+                ", inputDay =" + inputDay +
                 '}';
     }
 
-    @Override
-    public String toString() {
-        System.out.println("");
-        System.out.println("---------------------------------");
-        System.out.println("==> id = " + id);
-        System.out.println("==> type = " + type);
-        System.out.println("==> name = " + name);
-        System.out.println("==> quantity = " + quantity);
-        System.out.println("==> inventory = " + inventory);
-        System.out.println("==> price = " + price + " USD/product");
-        System.out.println("==> inputDay = " + inputDay);
-        System.out.println("==> Depot = " + (price*(inventory+quantity)) + "USD");
-        System.out.println("---------------------------------");
-        System.out.println("");
-        return "";
-    }
+     @Override
+     public String toString() {
+         System.out.println("");
+         System.out.println("---------------------------------");
+         System.out.println("==> id = " + id);
+         System.out.println("==> type = " + type);
+         System.out.println("==> name = " + name);
+         System.out.println("==> quantity = " + quantity);
+         System.out.println("==> inventory = " + inventory);
+         System.out.println("==> price = " + price + " USD/product");
+         System.out.println("==> inputDay = " + inputDay);
+         System.out.println("==> Depot = " + (price*(inventory+quantity)) + "USD");
+         System.out.println("---------------------------------");
+         System.out.println("");
+         return "";
+     }
 
     // Nó sẽ so sánh để trả về 1 giá trị kiểu số dương
     @Override

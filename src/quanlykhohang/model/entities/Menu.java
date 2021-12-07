@@ -65,18 +65,20 @@ public class Menu {
                 case 2:
                     System.out.println("\nInput ID product: ");
                     String id = new Scanner(System.in).nextLine();
+                    dataToFiles.writeFile(mapProduct);
                     System.out.println(commonCRUD.deleteProduct(id, mapProduct));
                     break;
                 case 3:
                     System.out.println("\nInput ID product: ");
                     String id3 = new Scanner(System.in).nextLine();
+                    dataToFiles.writeFile(mapProduct);
                     commonCRUD.updateProduct(id3,mapProduct);
                     break;
                 case 4:
                     System.out.println("\n--------------------------------");
                     System.out.println("        How do you search?        ");
                     System.out.println("1: Search by type product         ");
-                    System.out.println("2: Search by date(DD-MM-YY)       S");
+                    System.out.println("2: Search by date(DD-MM-YY)       ");
                     System.out.println("3: Search In the price range      ");     
                     System.out.println("4: Search by name product         ");
                     System.out.println("5: Exit                           ");
@@ -210,6 +212,7 @@ public class Menu {
                     switch (select6){
                         case 1:
                             export.exportAll(mapProduct);
+                            dataToFiles.deleteFile();
                             System.out.println("\nExport success");
                             break;
                         case 2:

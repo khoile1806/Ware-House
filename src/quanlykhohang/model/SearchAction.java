@@ -63,19 +63,4 @@ public class SearchAction {
         if(count==0) 
             System.out.println("\nData does not exist");
     }
-
-    // funcion searchInPriceRange from files
-    public void searchInPriceRange(double from, double to, Map<String,Product> mapProduct, String fileName) throws IOException{
-        dataToFiles.readFile();
-        int count=0;
-        for (Map.Entry<String, Product> entry : mapProduct.entrySet()) {
-            if(entry.getValue().getPrice()>= from && entry.getValue().getPrice()<= to){
-                count++;
-                System.out.println(entry.getValue().toString());
-            }
-        }
-        if(count==0) 
-            System.out.println("\nData does not exist");
-    }
-    
 }
