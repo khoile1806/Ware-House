@@ -158,10 +158,10 @@ public class Menu {
                             int select4 = inputTools.input.nextInt();
                             switch(select4){
                                 case 1: 
-                                    sortAction.sortInputdayDecrease(mapProduct);
+                                    sortAction.sortByInputdayDecrease(mapProduct);
                                     break;
                                 case 2:
-                                    sortAction. sortInputdayIncrease(mapProduct);
+                                    sortAction. sortByInputdayIncrease(mapProduct);
                                     break;
                             }
                             break;

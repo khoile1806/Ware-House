@@ -1,0 +1,30 @@
+Product{id='FD_1638261770648', type='FD', name='frog', quantity=29800, inventory=33, price=6.0, inputDay=Tue Nov 15 00:00:00 ICT 2016}
+Product{id='EL_1638261773707', type='EL', name='dishwasher', quantity=56500, inventory=63, price=12.0, inputDay=Mon Oct 10 00:00:00 ICT 2016}
+Product{id='EL_1638261773503', type='EL', name='washing machine', quantity=25000, inventory=12, price=20.0, inputDay=Mon Oct 10 00:00:00 ICT 2016}
+Product{id='FD_1638261770442', type='FD', name='pig', quantity=50200, inventory=36, price=29.0, inputDay=Tue Nov 15 00:00:00 ICT 2016}
+Product{id='EL_1638261774739', type='EL', name='TV', quantity=29800, inventory=33, price=6.0, inputDay=Sat Oct 15 00:00:00 ICT 2016}
+Product{id='FD_1638261771054', type='FD', name='chicken', quantity=26000, inventory=300, price=10.0, inputDay=Tue Nov 15 00:00:00 ICT 2016}
+Product{id='EL_1638261775146', type='EL', name='Lap top', quantity=26000, inventory=300, price=10.0, inputDay=Sat Oct 15 00:00:00 ICT 2016}
+Product{id='CE_1638261772485', type='CE', name='mortars', quantity=50200, inventory=36, price=29.0, inputDay=Thu Dec 15 00:00:00 ICT 2016}
+Product{id='EL_1638261774118', type='EL', name='water heater', quantity=20000, inventory=45, price=23.0, inputDay=Mon Oct 10 00:00:00 ICT 2016}
+Product{id='FD_1638261769420', type='FD', name='meat', quantity=25000, inventory=12, price=20.0, inputDay=Thu Nov 10 00:00:00 ICT 2016}
+Product{id='CE_1638261771259', type='CE', name='cups', quantity=30000, inventory=32, price=15.0, inputDay=Thu Nov 10 00:00:00 ICT 2016}
+Product{id='EL_1638261773302', type='EL', name='refrigerator', quantity=30000, inventory=32, price=15.0, inputDay=Mon Oct 10 00:00:00 ICT 2016}
+Product{id='FD_1638261769624', type='FD', name='fish', quantity=56500, inventory=63, price=12.0, inputDay=Thu Nov 10 00:00:00 ICT 2016}
+Product{id='CE_1638261771869', type='CE', name='teapots', quantity=70000, inventory=54, price=53.0, inputDay=Sat Dec 10 00:00:00 ICT 2016}
+Product{id='FD_1638261769828', type='FD', name='Egg', quantity=70000, inventory=54, price=53.0, inputDay=Thu Nov 10 00:00:00 ICT 2016}
+Product{id='FD_1638261770238', type='FD', name='beef', quantity=42000, inventory=12, price=33.0, inputDay=Tue Nov 15 00:00:00 ICT 2016}
+Product{id='EL_1638261773912', type='EL', name='coffee maker', quantity=70000, inventory=54, price=53.0, inputDay=Mon Oct 10 00:00:00 ICT 2016}
+Product{id='FD_1638261770851', type='FD', name='Crab', quantity=80000, inventory=14, price=83.0, inputDay=Tue Nov 15 00:00:00 ICT 2016}
+Product{id='FD_1638261770034', type='FD', name='milk', quantity=20000, inventory=45, price=23.0, inputDay=Thu Nov 10 00:00:00 ICT 2016}
+Product{id='CE_1638261772692', type='CE', name='chopsticks', quantity=29800, inventory=33, price=6.0, inputDay=Thu Dec 15 00:00:00 ICT 2016}
+Product{id='CE_1638261773101', type='CE', name='rice bowls', quantity=26000, inventory=300, price=10.0, inputDay=Thu Dec 15 00:00:00 ICT 2016}
+Product{id='EL_1638261774321', type='EL', name='calculator', quantity=42000, inventory=12, price=33.0, inputDay=Sat Oct 15 00:00:00 ICT 2016}
+Product{id='CE_1638261772073', type='CE', name='pots', quantity=20000, inventory=45, price=23.0, inputDay=Sat Dec 10 00:00:00 ICT 2016}
+Product{id='EL_1638261774940', type='EL', name='keyboard', quantity=80000, inventory=14, price=83.0, inputDay=Sat Oct 15 00:00:00 ICT 2016}
+Product{id='CE_1638261771462', type='CE', name='plates', quantity=25000, inventory=12, price=20.0, inputDay=Sat Dec 10 00:00:00 ICT 2016}
+Product{id='EL_1638261774525', type='EL', name='clock', quantity=50200, inventory=36, price=29.0, inputDay=Sat Oct 15 00:00:00 ICT 2016}
+Product{id='CE_1638261772897', type='CE', name='spoons', quantity=80000, inventory=14, price=83.0, inputDay=Thu Dec 15 00:00:00 ICT 2016}
+Product{id='CE_1638261771664', type='CE', name='bowls', quantity=56500, inventory=63, price=12.0, inputDay=Sat Dec 10 00:00:00 ICT 2016}
+Product{id='CE_1638261772279', type='CE', name='jars', quantity=42000, inventory=12, price=33.0, inputDay=Thu Dec 15 00:00:00 ICT 2016}
+Product{id='FD_1638261769215', type='FD', name='iceScream', quantity=30000, inventory=32, price=15.0, inputDay=Thu Nov 10 00:00:00 ICT 2016}

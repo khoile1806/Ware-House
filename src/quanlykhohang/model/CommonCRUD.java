@@ -9,8 +9,9 @@ import java.util.*;
 
 public class CommonCRUD {
     public void addProduct(String type, Map<String,Product> mapProduct) throws ParseException, InterruptedException, IOException {
-        // Scanner sc = new Scanner(System.in);
+//       => bắt đâu phần nhập dữ liệu từ bàn phím
 
+        // Scanner sc = new Scanner(System.in);
         // System.out.println("Input name:");
         // String name= sc.nextLine();
         // System.out.println("input inventory");
@@ -25,9 +26,12 @@ public class CommonCRUD {
         ConvertTime convert = new ConvertTime();
         // Date date = convert.stringToDate(time);
         // Product product= new Product(type, name, quantity, price, date, inventory);
-
         // mapProduct.put(product.getId(), product);
 
+//       => Kết thúc phần nhập dữ liệu từ bàn phím
+
+
+//       => Nhập dữ liệu cứng để thầy dễ sử dụng chương trình
         // FODD Product
         Product f = new Product("FD", "iceScream", 30000, 15, convert.stringToDate("10-11-2016"),32);
         mapProduct.put(f.getId(), f);
@@ -124,6 +128,9 @@ public class CommonCRUD {
         Product E10 = new Product("EL", "Lap top", 26000, 10, convert.stringToDate("15-10-2016"),300);
         mapProduct.put(E10.getId(), E10);
         Thread.sleep(200);
+
+//      => kết thúc phần nhập dữ liệu cứng
+
         System.out.print(mapProduct);
         dataToFiles.writeFile(mapProduct);
         System.out.println(mapProduct);

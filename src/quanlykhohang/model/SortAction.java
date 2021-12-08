@@ -75,7 +75,7 @@ public class SortAction {
         // System.out.println(map3);
     }
 
-    public void sortInputdayIncrease(Map<String, Product> mapProduct) throws IOException{
+    public void sortByInputdayIncrease(Map<String, Product> mapProduct) throws IOException{
         dataToFiles.readFile();
         Map<String, Date> map3 = new HashMap<>();
         for (Map.Entry<String, Product> entry : mapProduct.entrySet()){
@@ -88,7 +88,7 @@ public class SortAction {
         // System.out.println(map3);
     }
 
-    public void sortInputdayDecrease(Map<String, Product> mapProduct) throws IOException{
+    public void sortByInputdayDecrease(Map<String, Product> mapProduct) throws IOException{
         dataToFiles.readFile();
         Map<String, Date> map3 = new HashMap<>();
         for (Map.Entry<String, Product> entry : mapProduct.entrySet()){
