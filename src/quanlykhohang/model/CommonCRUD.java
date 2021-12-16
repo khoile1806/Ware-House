@@ -2,12 +2,14 @@ package quanlykhohang.model;
 import quanlykhohang.model.entities.Product;
 import quanlykhohang.utils.ConvertTime;
 import quanlykhohang.utils.dataToFiles;
+import quanlykhohang.utils.ReadObject;
 
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.*;
 
 public class CommonCRUD {
+    ReadObject read = new ReadObject();
     public void addProduct(String type, Map<String,Product> mapProduct) throws ParseException, InterruptedException, IOException {
 //       => bắt đâu phần nhập dữ liệu từ bàn phím
 
@@ -130,14 +132,13 @@ public class CommonCRUD {
         Thread.sleep(200);
 
 //      => kết thúc phần nhập dữ liệu cứng
-
-        System.out.print(mapProduct);
         dataToFiles.writeFile(mapProduct);
         System.out.println(mapProduct);
 }
 
     public String deleteProduct(String id, Map<String,Product> mapProduct) throws IOException{
-        dataToFiles.readFile();
+//        dataToFiles.readFile();
+        read.readObject();
         Product product = mapProduct.get(id);
         if(product== null) return "Not found product with id: " + id;
         else {
