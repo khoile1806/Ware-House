@@ -219,7 +219,7 @@ public class Menu {
                         	System.out.println("input type");
                         	String type = new Scanner(System.in).next();
                         	export.exportByType(mapProduct,type);
-                        	System.out.println("Export successs !!");
+                        	System.out.println("Export successes !!");
                             break; 
                     }
                     break;

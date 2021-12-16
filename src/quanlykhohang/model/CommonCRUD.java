@@ -149,7 +149,8 @@ public class CommonCRUD {
     }
 
     public String updateProduct(String id, Map<String,Product> mapProduct) throws IOException{
-        dataToFiles.readFile();
+//        dataToFiles.readFile();
+        read.readObject();
         Scanner Scanner = new Scanner(System.in);
         Product product = mapProduct.get(id);
         if(product== null) return "Not found product with id: " + id;
