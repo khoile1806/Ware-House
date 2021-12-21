@@ -106,7 +106,7 @@ public class Product implements Comparable<Product>{
     // }
 
     public String toString() {
-        return String.format("%-5s %-15s %-15s %-15s %-15s %-15s %-15s %-15s \n", id, type, name, quantity, inventory, price, inputDay, (price*(inventory+quantity)));
+        return String.format("%-5s %-15s %-20s %-15s %-15s %-15s %-15s %-15s \n", id, type, name, quantity, inventory, price, inputDay, (price*(inventory+quantity)));
     }
 
     // Nó sẽ so sánh để trả về 1 giá trị kiểu số dương

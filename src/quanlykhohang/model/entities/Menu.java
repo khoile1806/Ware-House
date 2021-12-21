@@ -6,6 +6,7 @@ import quanlykhohang.model.Export;
 import quanlykhohang.model.SearchAction;
 import quanlykhohang.model.SortAction;
 import quanlykhohang.utils.ConvertTime;
+import quanlykhohang.utils.ReadObject;
 import quanlykhohang.utils.dataToFiles;
 
 import java.io.IOException;
@@ -20,6 +21,7 @@ public class Menu {
     SearchAction searchAction = new SearchAction();
     SortAction sortAction = new SortAction();
     Statistical statistical = new Statistical();
+    ReadObject read = new ReadObject();
     Export export = new Export();
 
     public void showMenu() throws ParseException, InterruptedException, IOException {
@@ -195,11 +197,15 @@ public class Menu {
                     }
                     break;
                 case 6:
-                    dataToFiles.readFile();
+//                    read.readObject();
                     System.out.println("");
                     statistical.total(mapProduct);
                     statistical.productsExpired(mapProduct);
                     statistical.totalProducts(mapProduct);
+                    if(mapProduct != null)
+                        System.out.println(mapProduct);
+                    else
+                        System.out.println("\nData does not exist");
                     break;
                 case 7:
                     System.out.println("\n--------------------");
@@ -211,11 +217,13 @@ public class Menu {
                     int select6 = inputTools.input.nextInt();
                     switch (select6){
                         case 1:
+//                            read.readObject();
                             export.exportAll(mapProduct);
                             dataToFiles.deleteFile();
                             System.out.println("\nExport success");
                             break;
                         case 2:
+//                            read.readObject();
                         	System.out.println("input type");
                         	String type = new Scanner(System.in).next();
                         	export.exportByType(mapProduct,type);

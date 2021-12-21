@@ -40,28 +40,28 @@ public class Statistical {
         System.out.println("==> total quantity of Electrical in stock: " + Electrical);
     }
 
-    public void productsExpired(Map<String,Product> mapProduct){
+    public void productsExpired(Map<String,Product> mapProduct) {
         int food = 0;
         int Ceramic = 0;
         int Electrical = 0;
-        for(Map.Entry<String,Product> entry : mapProduct.entrySet()){
-            if(entry.getValue().getType().equalsIgnoreCase("FD")){
+        for (Map.Entry<String, Product> entry : mapProduct.entrySet()) {
+            if (entry.getValue().getType().equalsIgnoreCase("FD")) {
                 food = entry.getValue().getQuantity() + entry.getValue().getInventory();
             }
-            if(entry.getValue().getType().equalsIgnoreCase("CE")){
+            if (entry.getValue().getType().equalsIgnoreCase("CE")) {
                 Ceramic = entry.getValue().getQuantity() + entry.getValue().getInventory();
             }
-            if(entry.getValue().getType().equalsIgnoreCase("EL")){
+            if (entry.getValue().getType().equalsIgnoreCase("EL")) {
                 Electrical = entry.getValue().getQuantity() + entry.getValue().getInventory();
             }
         }
-        if(food<=0){
+        if (food <= 0) {
             System.out.println("==> Food is out of stock");
         }
-        if(Ceramic<=0){
+        if (Ceramic <= 0) {
             System.out.println("==> Ceramic is out of stock");
         }
-        if(Electrical<=0){
+        if (Electrical <= 0) {
             System.out.println("==> Electrical is out of stock");
         }
 
