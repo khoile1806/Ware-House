@@ -39,7 +39,7 @@ public class Menu {
             System.out.println("\n------------------");
             System.out.println("Enter your choice:  ");
             System.out.println("                    ");
-            choose = inputTools.input.nextInt();
+            choose = new Scanner(System.in).nextInt();
             switch (choose){
                 case 1:
                     System.out.println("\n-------------------");
@@ -129,6 +129,7 @@ public class Menu {
                     System.out.println("3: Sort by ID          ");
                     System.out.println("4: Sort by Type & Day  ");
                     System.out.println("5: Sort by Type & price");
+                    System.out.println("6: Exit                ");
                     System.out.println("\n---------------------");
                     System.out.println("Enter your choice");
                     int select2= inputTools.input.nextInt();
@@ -191,6 +192,9 @@ public class Menu {
                         case 5:
                             System.out.println("");
                             sortAction.sortByTypeAndPrice(mapProduct);
+                            break;
+                        case 6:
+                            System.out.println("Exit\n");
                             break;
                         default:
                             break;

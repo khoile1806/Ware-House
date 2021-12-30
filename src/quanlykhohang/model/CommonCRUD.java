@@ -13,22 +13,22 @@ public class CommonCRUD {
     public void addProduct(String type, Map<String,Product> mapProduct) throws ParseException, InterruptedException, IOException {
 //       => bắt đâu phần nhập dữ liệu từ bàn phím
 
-        // Scanner sc = new Scanner(System.in);
-        // System.out.println("Input name:");
-        // String name= sc.nextLine();
-        // System.out.println("input inventory");
-        // int inventory = sc.nextInt();
-        // System.out.println("Input price:");
-        // double price= sc.nextDouble();
-        // System.out.println("Input quantity:");
-        // int quantity= sc.nextInt();
-        // System.out.println("Input time with format (dd-mm-yy): ");
-        // String time = new Scanner(System.in).nextLine();
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Input name:");
+//         String name= sc.nextLine();
+//         System.out.println("input inventory");
+//         int inventory = sc.nextInt();
+//         System.out.println("Input price:");
+//         double price= sc.nextDouble();
+//         System.out.println("Input quantity:");
+//         int quantity= sc.nextInt();
+//         System.out.println("Input time with format (dd-mm-yy): ");
+//         String time = new Scanner(System.in).nextLine();
 
         ConvertTime convert = new ConvertTime();
-        // Date date = convert.stringToDate(time);
-        // Product product= new Product(type, name, quantity, price, date, inventory);
-        // mapProduct.put(product.getId(), product);
+//         Date date = convert.stringToDate(time);
+//         Product product= new Product(type, name, quantity, price, date, inventory);
+//         mapProduct.put(product.getId(), product);
 
 //       => Kết thúc phần nhập dữ liệu từ bàn phím
 
@@ -138,7 +138,7 @@ public class CommonCRUD {
 
     public String deleteProduct(String id, Map<String,Product> mapProduct) throws IOException{
 //        dataToFiles.readFile();
-        read.readObject();
+//        read.readObject();
         Product product = mapProduct.get(id);
         if(product== null) return "Not found product with id: " + id;
         else {
@@ -150,7 +150,7 @@ public class CommonCRUD {
 
     public String updateProduct(String id, Map<String,Product> mapProduct) throws IOException{
 //        dataToFiles.readFile();
-        read.readObject();
+//        read.readObject();
         Scanner Scanner = new Scanner(System.in);
         Product product = mapProduct.get(id);
         if(product== null) return "Not found product with id: " + id;
