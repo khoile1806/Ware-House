@@ -7,6 +7,7 @@ public class Statistical {
         int price = 0;
         int quantity = 0;
         int inventory = 0;
+
         for(Map.Entry<String,Product> entry : mapProduct.entrySet()){
             if(entry.getValue().getQuantity()>0){
                 price += entry.getValue().getPrice()*(entry.getValue().getQuantity() + entry.getValue().getInventory());
@@ -44,6 +45,7 @@ public class Statistical {
         int food = 0;
         int Ceramic = 0;
         int Electrical = 0;
+
         for (Map.Entry<String, Product> entry : mapProduct.entrySet()) {
             if (entry.getValue().getType().equalsIgnoreCase("FD")) {
                 food = entry.getValue().getQuantity() + entry.getValue().getInventory();
